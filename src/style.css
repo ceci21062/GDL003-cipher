@@ -7,6 +7,7 @@ body{
   height: 100%;
 }
 
+
 .inicio{
   background-color: #e80a0a;
   border: none;
@@ -17,3 +18,25 @@ body{
   display: inline-block;
   font-size: 16px;
 }
+.codificar{
+  background-color: #e80a0a;
+  border: none;
+  color: #f9fff5;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+ .decodificar{
+   background-color: #e80a0a;
+   border: none;
+   color: #f9fff5;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+ }
+ 
