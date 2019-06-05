@@ -6,17 +6,51 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div id="intro">
+    <div id="intro" class="intro">
       <h1 id="introduccion"></h1>
       <h4 id="objetivo"></h4>
       <input type="button" id="iniciar" value="INICIAR" onclick="menu()" class="inicio"\>
     </div>
 
 <div id=menu>
-  <input type="button" id="codificar" value="CODIFICAR" onclick="" class="codificar"/>
-  <input type="button" id="decodificar" value="DECODIFICAR" onclick=""  class="decodificar"/>
+  <div class="especifCodi">
+  <p id="requisitos"></p>
+  <ul>
+    <li id= "reqUno"></li>
+    <li id="reqDos"></li>
+    <li id= "reqTre"></li>
+    <li id="reqCua"></li>
+  </ul>
+  <input type="button" id="bottoncodificar" value="CODIFICAR"onclick="codificar()" class="codificar" \>
 </div>
 
+<div class= "especifDecodi">
+  <p id="requisitos1"></p>
+  <ul>
+    <li id="reqCin"></li>
+    <li id="reqSei"></li>
+    <li id="reqSie"></li>
+    <li id="reqOch"></li>
+    <li id="reqNue"></li>
+  </ul>
+  <input type="button" id="bottondecodificar" value="DECODIFICAR" onclick=""  class="decodificar"/>
+</div>
+</div>
+
+<div id="codificar">
+   <label for="codigo">NOMBRE DE ARCHIVO A CODIFICAR:</label>
+    <input type="text" id="codigo"\>
+    <br>
+    <label for="numBase">NUMERO BASE:</label>
+    <input type="text" id="numBase"\>
+    <br>
+    <input type="button" id="enviarCodigo" value="ENVIAR" class="enviar"\>
+    <p id="texto"></p>
+
+
+
+
+</div>
 
 
 
