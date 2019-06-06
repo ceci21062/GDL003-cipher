@@ -24,17 +24,17 @@
   <input type="button" id="bottoncodificar" value="CODIFICAR"onclick="codificar()" class="codificar" \>
 </div>
 
-<div class= "especifDecodi">
-  <p id="requisitos1"></p>
-  <ul>
-    <li id="reqCin"></li>
-    <li id="reqSei"></li>
-    <li id="reqSie"></li>
-    <li id="reqOch"></li>
-    <li id="reqNue"></li>
-  </ul>
-  <input type="button" id="bottondecodificar" value="DECODIFICAR" onclick=""  class="decodificar"/>
-</div>
+  <div class= "especifDecodi">
+    <p id="requisitos1"></p>
+    <ul>
+      <li id="reqCin"></li>
+      <li id="reqSei"></li>
+      <li id="reqSie"></li>
+      <li id="reqOch"></li>
+      <li id="reqNue"></li>
+    </ul>
+    <input type="button" id="bottondecodificar" value="DECODIFICAR" onclick="decodificar()"  class="decodificar"/>
+  </div>
 </div>
 
 <div id="codificar">
@@ -44,18 +44,20 @@
     <label for="numeroBase">NUMERO BASE:</label>
     <input type="text" id="numeroBase"\>
     <br>
-    <input type="button" id="enviarCodigo" value="ENVIAR" class="enviar"\>
+    <input type="button" id="enviarCodigo" value="ENVIAR" \>
     <p id="texto"></p>
-
-
-
-
 </div>
 
-
-
-
-
+<div id="decodificar">
+    <label for="clave">CODIGO:</label>
+     <input type="text" id="clave"\>
+     <br>
+     <label for="numeroSecreto">NUMERO BASE:</label>
+     <input type="text" id="numeroSecreto"\>
+     <br>
+     <input type="button" id="enviarClave" value="DESIFRAR" \>
+     <p id="codiDesi"></p>
+</div>
 
 
     <script src="cipher.js"></script>
