@@ -36,8 +36,11 @@ const codificar =() => {
   document.getElementById('intro').style.display ='none';
   document.getElementById("decodificar").style.display="none";
 
+  let txt = document.getElementById("codigo").value;
+  let desplazar= document.getElementById("numeroBase").value;
+
   document.getElementById("enviarCodigo").addEventListener("click",function(){
-    document.getElementById("texto").innerHTML = window.cipher.encode();
+    document.getElementById("texto").innerHTML = window.cipher.encode(desplazar,txt);
   });
 };
 
@@ -49,8 +52,10 @@ const decodificar= () => {
   document.getElementById('menu').style.display ='none';
   document.getElementById('intro').style.display ='none';
 
+  let codiAres=document.getElementById("clave").value;
+  let numSecret=document.getElementById("numeroSecreto").value;
   document.getElementById("enviarClave").addEventListener("click",function(){
-    document.getElementById("codiDesi").innerHTML = window.cipher.dencode();
+    document.getElementById("codiDesi").innerHTML = window.cipher.decode(numSecret,codiAres);
   });
 };
 

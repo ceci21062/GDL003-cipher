@@ -1,22 +1,14 @@
 window.cipher = {
-  encode: ()=> {
-    let txt = document.getElementById("codigo").value;
-    let desplazar= document.getElementById("numeroBase").value;
+  encode: (desplazar,txt)  => {
     let codi = '';
-
     for(let i=0; i<=txt.length;i++){
       let conLet = txt.charCodeAt(i);
       let eje = parseInt(conLet);
-      console.log(eje);
       let sumaPri = eje - 65;
-      console.log(sumaPri);
       let desNum= parseInt(desplazar);
       let sumaDes = sumaPri + desNum;
-      console.log(sumaDes);
       let sumaRes = sumaDes % 26;
-      console.log(sumaRes);
       let sumaTot = sumaRes + 65;
-      console.log(sumaTot);
       let txtCo = String.fromCharCode(sumaTot);
       console.log(String.fromCharCode(sumaTot));
       codi += txtCo;
@@ -25,11 +17,8 @@ window.cipher = {
     return codi;
   },
 
-  dencode: ()=>{
-    let codiAres=document.getElementById("clave").value;
-    let numSecret=document.getElementById("numeroSecreto").value;
+  decode: (numSecret,codiAres) =>{
     let res= "";
-
     for (let i = 0; i <=codiAres.length; i++){
       let codiAss = codiAres.charCodeAt(i);
       let eje2= parseInt(codiAss);
