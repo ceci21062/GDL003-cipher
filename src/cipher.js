@@ -30,8 +30,9 @@ window.cipher = {
         let letMnCo= String.fromCharCode(letMnTot);
         codi+= letMnCo;
       }
-    else if (conLet =) {
-
+    else if (conLet =32) {
+      let espacio= String.fromCharCode(conLet);
+      codi+= espacio
     }
 
     }
