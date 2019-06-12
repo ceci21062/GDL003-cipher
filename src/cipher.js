@@ -4,15 +4,31 @@ window.cipher = {
     for(let i=0; i<=txt.length;i++){
       let conLet = txt.charCodeAt(i);
       let eje = parseInt(conLet);
-      let sumaPri = eje - 65;
       let desNum= parseInt(desplazar);
-      let sumaDes = sumaPri + desNum;
-      let sumaRes = sumaDes % 26;
-      let sumaTot = sumaRes + 65;
-      let txtCo = String.fromCharCode(sumaTot);
-      console.log(String.fromCharCode(sumaTot));
-      codi += txtCo;
 
+      if(conLet >= 65 & conLet <=90){
+      let letPri = eje - 65;
+      let letDes = letPri + desNum;
+      let letRes = letDes % 26;
+      let letTot = letRes + 65;
+      let txtCo = String.fromCharCode(letTot);
+      codi += txtCo;
+      }
+      else  if (conLet >= 48 & conLet <=57){
+        let numPri= eje - 48;
+        let numDes= numPri + desNum;
+        let numRes= numDes % 10;
+        let numTot= numRes +48;
+        let numCo= String.fromCharCode(numTot);
+        codi+= numCo;
+      }
+      else if (conLet>=) {
+
+      }{
+
+      }{
+
+      }
     }
     return codi;
   },

@@ -6,7 +6,7 @@ document.getElementById("decodificar").style.display="none";
 
 //pag de inicio
 document.getElementById("introduccion").innerHTML = "CLASIFICADO";
-document.getElementById("objetivo").innerHTML = "Esta app esta diseñada para codificar el nombre de cualquier archivo";
+document.getElementById("objetivo").innerHTML = "Codificar el nombre de cualquier archivo para que este sea mas seguro y facil de encontrar";
 //function menu() {
 const menu=() => {
   document.getElementById('menu').style.display = 'block';
