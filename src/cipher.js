@@ -7,12 +7,12 @@ window.cipher = {
       let desNum= parseInt(desplazar);
 
       if(conLet >= 65 & conLet <=90){
-      let letPri = eje - 65;
-      let letDes = letPri + desNum;
-      let letRes = letDes % 26;
-      let letTot = letRes + 65;
-      let txtCo = String.fromCharCode(letTot);
-      codi += txtCo;
+      let letMyPri = eje - 65;
+      let letMyDes = letMyPri + desNum;
+      let letMyRes = letMyDes % 26;
+      let letMyTot = letMyRes + 65;
+      let txtMyCo = String.fromCharCode(letMyTot);
+      codi += txtMyCo;
       }
       else  if (conLet >= 48 & conLet <=57){
         let numPri= eje - 48;
@@ -22,13 +22,18 @@ window.cipher = {
         let numCo= String.fromCharCode(numTot);
         codi+= numCo;
       }
-      else if (conLet>=) {
-
-      }{
-
-      }{
-
+      else if (conLet>= 97 & conLet <= 122){
+        let letMnPri= eje - 97;
+        let letMnDes= letMnPri + desNum;
+        let letMnRes= letMnDes % 26;
+        let letMnTot= letMnRes + 97;
+        let letMnCo= String.fromCharCode(letMnTot);
+        codi+= letMnCo;
       }
+    else if (conLet =) {
+
+    }
+
     }
     return codi;
   },
