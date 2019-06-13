@@ -32,34 +32,43 @@ body{
   position: relative;
   top: 266px;
   background-color:#e80a0a;
-  padding: 50px 0px;
+  border:#fc1a1a 8px groove;
+  padding: 35px 0px;
   position: relative;
-  top: 483px;
+  top: 473px;
+  border-radius:30px;
 
 }
 
 
 #bottoncodificar{
 
-  background-color: #e80a0a;
+  background-color:#f9fff5;
   border: none;
-  color: #f9fff5;
-  padding: 15px 32px;
+  color: #e80a0a;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  position: relative;
+  top:0px; left: 100px;
   font-size: 16px;
+  border-radius:10px;
+  border:#f9fff5 15px outset;
+
   }
 
  #bottondecodificar{
-   background-color: #e80a0a;
+   background-color:#f9fff5;
    border: none;
-   color: #f9fff5;
-   padding: 15px 32px;
+   color: #e80a0a;
+   padding: 10px 20px;
    text-align: center;
    text-decoration: none;
-   display: inline-block;
+   position: relative;
+   top:0px;  left:800px;
    font-size: 16px;
+   border-radius:10px;
+   border:#f9fff5 15px outset;
  }
 
 
