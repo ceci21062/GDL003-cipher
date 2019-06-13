@@ -73,11 +73,11 @@ window.cipher = {
       }
 
       if(codiAss>= 97 & codiAss <= 122){
-        let resLetMnPri = eje2 - 97;
-        let resLetMn2 = resLetMnPri - conNumSec;
+        let resLetMnPri = eje2 + 97;
+        let resLetMn2 =  resLetMnPri + conNumSec;
         let resLetMn3 = resLetMn2 % 26;
         let resLetMn4 = resLetMn3 + 97;
-        let clavMnCo = String.fromCharCode(resLetMn4);
+        let clavMnCo = String.fromCharCode( resLetMn4 );
         res += clavMnCo;
       }
 
