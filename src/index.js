@@ -14,18 +14,6 @@ const menu=() => {
   document.getElementById("codificar").style.display='none';
   document.getElementById("decodificar").style.display="none";
 
-  document.getElementById("requisitos").innerHTML= "Para codificar es necesario tener en cuenta los sigueintes requisitos";
-  document.getElementById("reqUno").innerHTML="El nombre debe estar en mayusculas";
-  document.getElementById("reqDos").innerHTML="No incluir simbolos";
-  document.getElementById("reqTre").innerHTML="No incluir la Ñ";
-  document.getElementById("reqCua").innerHTML="sin espacios";
-
-  document.getElementById("requisitos1").innerHTML= "Para codificar es necesario tener en cuenta los sigueintes requisitos";
-  document.getElementById("reqCin").innerHTML="El nombre debe estar en mayusculas";
-  document.getElementById("reqSei").innerHTML="No incluir simbolos";
-  document.getElementById("reqSie").innerHTML="No incluir la Ñ";
-  document.getElementById("reqOch").innerHTML="sin espacios";
-  document.getElementById("reqNue").innerHTML="Tener a la mano el Numero Base";
 };
 
 document.getElementById('iniciar').addEventListener("click",menu);
@@ -36,7 +24,7 @@ const codificar =() => {
   document.getElementById('intro').style.display ='none';
   document.getElementById("decodificar").style.display="none";
 
- //SE MUEVE EL VALOR DE LOS DATOS QUE LEE POR Q ASTA QUE SE PRECIONA EL BOTTON SE ENVIA LA INFORMACION 
+ //SE MUEVE EL VALOR DE LOS DATOS QUE LEE POR Q ASTA QUE SE PRECIONA EL BOTTON SE ENVIA LA INFORMACION
   //let txt = document.getElementById("codigo").value;
   //let desplazar= document.getElementById("numeroBase").value;
 
