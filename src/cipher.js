@@ -38,6 +38,12 @@ window.cipher = {
       let espacio= String.fromCharCode(espam);
       codi+= espacio;
       }
+      if (conLet>=33 & conLet<=47 || conLet>=58 & conLet<=64 || conLet>=91 & conLet<=96 || conLet>=123 ) {
+        let sim= conLet;
+        let simbolo=String.fromCharCode(sim);
+        codi+= simbolo;
+      }
+
     }
     return codi;
   },
@@ -58,7 +64,7 @@ window.cipher = {
         res += clavMyCo;
       }
 
-      else if(codiAss >= 48 & codiAss <=57){
+      if(codiAss >= 48 & codiAss <=57){
         let resNumPri= eje2 + 48;
         let resNum3= resNumPri % 9;
         let resNum4= resNum3 + 48;
@@ -66,13 +72,25 @@ window.cipher = {
         res += resNumCo;
       }
 
-      else if(codiAss>= 97 & codiAss <= 122){
+      if(codiAss>= 97 & codiAss <= 122){
         let resLetMnPri = eje2 - 97;
         let resLetMn2 = resLetMnPri - conNumSec;
         let resLetMn3 = resLetMn2 % 26;
         let resLetMn4 = resLetMn3 + 97;
         let clavMnCo = String.fromCharCode(resLetMn4);
         res += clavMnCo;
+      }
+
+      if(codiAss ==32){
+      let resEspam= codiAss;
+      let resEspacio= String.fromCharCode(resEspam);
+      res += resEspacio;
+      }
+
+      if (codiAss>=33 & codiAss<=47 || codiAss>=58 & codiAss<=64 ||codiAss>=91 & codiAss<=96 || codiAss>=123 ){
+        let reSim=codiAss;
+        let reSimbolo= String.fromCharCode(reSim);
+        res += reSimbolo;
       }
 
     }
