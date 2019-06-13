@@ -1,10 +1,10 @@
 body{
 background-image: url(https://img.vixdata.io/pd/webp-large/es/sites/default/files/btg/tech.batanga.com/files/Encriptar-archivos-que-es-y-como-funciona-3.jpg);
   background-size: cover;  /*se ajusta al tamaño de la pantalla*/
-  
+
 }
 
-.intro{
+#intro{
   text-align: center;
   justify-content: center;
   color: white;
@@ -13,7 +13,7 @@ background-image: url(https://img.vixdata.io/pd/webp-large/es/sites/default/file
   width: 50%;
 }
 
-.inicio{
+#iniciar{
     background-color: Transparent;
     border:4px solid white;
     color: white;
@@ -29,7 +29,7 @@ background-image: url(https://img.vixdata.io/pd/webp-large/es/sites/default/file
 
 
 
-.codificar{
+#bottoncodificar{
 
   background-color: #e80a0a;
   border: none;
@@ -41,7 +41,7 @@ background-image: url(https://img.vixdata.io/pd/webp-large/es/sites/default/file
   font-size: 16px;
   }
 
- .decodificar{
+ #bottondecodificar{
    background-color: #e80a0a;
    border: none;
    color: #f9fff5;
@@ -52,16 +52,27 @@ background-image: url(https://img.vixdata.io/pd/webp-large/es/sites/default/file
    font-size: 16px;
  }
 
-.especifCodi{
+
+#especifCodi{
+  color: white;
   float: left;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   width: 25%;
 }
 
-.especifDecodi{
+#especifDecodi{
+    color: white;
   float: right;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   width: 25%;
 
 
+}
+
+#codificar{
+  color: white;
+}
+
+#decodificar{
+    color: white;
 }
