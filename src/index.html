@@ -10,38 +10,35 @@
       <h1 id="introduccion"></h1>
       <h4 id="objetivo"></h4>
       <input type="button" id="iniciar" value="INICIAR" />
-</div>
+    </div>
+    <div id="menu">
+      <input type="button" id="bottoncodificar" value="CODIFICAR" />
+      <input type="button" id="bottondecodificar" value="DECODIFICAR" />
+    </div>
+    <div id="codificar">
+      <label for="codigo">TEXTO:</label>
+      <input type="text" id="codigo"/>
 
+      <label for="numeroBase">NUMERO BASE:</label>
+      <input type="text" id="numeroBase"/>
+      <br>
+      <input type="button" id="enviarCodigo" value="ENVIAR" />
+      <p id="texto"></p>
+      <input type="button" id="reset" onclick="history.go(0)" value="REGRESAR" />
 
-<div id="menu">
-    <input type="button" id="bottoncodificar" value="CODIFICAR" />
-    <input type="button" id="bottondecodificar" value="DECODIFICAR" />
-</div>
-
-<div id="codificar">
-   <label for="codigo">NOMBRE DE ARCHIVO A CODIFICAR:</label>
-    <input type="text" id="codigo"/>
-    <br>
-    <label for="numeroBase">NUMERO BASE:</label>
-    <input type="text" id="numeroBase"/>
-    <br>
-    <input type="button" id="enviarCodigo" value="ENVIAR" />
-    <p id="texto"></p>
-</div>
-
-<div id="decodificar">
-    <label for="clave">CODIGO:</label>
-     <input type="text" id="clave"/>
-     <br>
-     <label for="numeroSecreto">NUMERO BASE:</label>
-     <input type="text" id="numeroSecreto"/>
-     <br>
-     <input type="button" id="enviarClave" value="DESIFRAR" />
-     <p id="codiDesi"></p>
-</div>
-
-
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    </div>
+    <div id="decodificar">
+      <label for="clave">CODIGO:</label>
+       <input type="text" id="clave"/>
+       <br>
+       <label for="numeroSecreto">NUMERO BASE:</label>
+       <input type="text" id="numeroSecreto"/>
+       <br>
+       <input type="button" id="enviarClave" value="DESIFRAR" />
+       <p id="codiDesi"></p>
+       <input type="button" id="reset2" onclick="history.go(0)" value="REGRESAR" />
+    </div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
   </body>
 </html>

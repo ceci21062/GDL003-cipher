@@ -29,8 +29,6 @@ body{
   }
 
 #menu{
-  position: relative;
-  top: 266px;
   background-color:#e80a0a;
   border:#fc1a1a 8px groove;
   padding: 35px 0px;
@@ -73,9 +71,96 @@ body{
 
 
 #codificar{
+  position: relative;
+  top:100px;  left:250px;
+  justify-content: center;
   color: white;
+  font-size:x-large;
+  font-family: "Times New Roman", Times, serif;
+  width: 50%;
+}
+
+#codigo{
+    box-sizing:content-box;
+    width: 100%;
+    padding: 50px 60px;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+#numeroBase{
+    box-sizing:content-box;
+    width: 5%;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#texto{
+    box-sizing:content-box;
+    width: 100%;
+    padding: 50px 60px;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+#reset{
+  background-color: Transparent;
+  border:4px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  position: relative;
+  top: 100px; left: 600px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #decodificar{
-    color: white;
+  position: relative;
+  top:100px;  left:250px;
+  justify-content: center;
+  color: white;
+  font-size:x-large;
+  font-family: "Times New Roman", Times, serif;
+  width: 50%;
+}
+#clave{
+  box-sizing:content-box;
+  width: 100%;
+  padding: 50px 60px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#numeroSecreto{
+  box-sizing:content-box;
+  width: 5%;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+#codiDesi{
+  box-sizing:content-box;
+  width: 100%;
+  padding: 50px 60px;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+#reset2{
+  background-color: Transparent;
+  border:4px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  position: relative;
+  top: 100px; left: 600px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
 }

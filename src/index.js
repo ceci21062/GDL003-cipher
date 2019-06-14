@@ -1,4 +1,5 @@
 
+
 document.getElementById('intro').style.display = 'block';
 document.getElementById('menu').style.display = 'none';
 document.getElementById("codificar").style.display='none';
